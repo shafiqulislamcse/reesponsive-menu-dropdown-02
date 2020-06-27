@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding:0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+header{
+	background-color: #292D3E;
+}
+header::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.brand-name{
+	width: 20%;
+	float: left;
+}
+.brand-name a{
+	font-size: 25px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 15px 0;
+	display: block;
+}
+nav{
+	width: 80%;
+	float: left;
+}
+nav ul{
+	list-style: none;
+	float: right;
+}
+nav ul li{
+	display: inline-block;
+	position: relative;
+}
+nav ul li a{
+	color:#fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	padding:20px;
+	-webkit-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+
+}
+nav ul li:last-child > a{
+	padding-right: 0;
+}
+nav ul li a .fa{
+	margin-left: 12px;
+
+}
+nav ul li a:hover, nav ul li a.active{
+	color: #0A84FF;
+}
+nav ul li:hover > ul{
+	display: block;
+}
+nav ul li:hover > a .fa{
+	transform: rotate(180deg);
+}
+nav ul ul{
+	position: absolute;
+	width: 200px;
+	background-color: #292D3E;
+	border-top: 3px solid #0A84FF;
+	display: none;
+}
+nav ul ul li:hover > a{
+	margin-left: 8px;
+}
+
+.toggle{
+	font-size: 25px;
+	color: #fff;
+	cursor: pointer;
+	padding-top: 20px;
+	display: none;
+	float: right;
+}
